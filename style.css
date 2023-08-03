@@ -1,0 +1,71 @@
+:root {
+    --primary-white: #fafafa; 
+    --secondary-white: #edeef0;
+    --primary-blue: #002765;
+    --primary-red: #ff5945;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+}
+  
+.todo-app {
+    width: 100%;
+    max-width: 540px;
+    background: var(--primary-white);
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.todo-app h2 {
+    color: var(--primary-blue);
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo-app h2 img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--secondary-white);
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-weight: 14px;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: var(--primary-red);
+    color: var(--primary-white);
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
