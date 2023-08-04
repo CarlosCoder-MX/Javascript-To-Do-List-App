@@ -1,6 +1,7 @@
 :root {
     --primary-white: #fafafa; 
     --secondary-white: #edeef0;
+    --primary-grey: #595858;
     --primary-blue: #002765;
     --primary-red: #ff5945;
 }
@@ -68,4 +69,36 @@ button {
     font-size: 16px;
     cursor: pointer;
     border-radius: 40px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-bottom: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 7px;
+    left: 12px;
+}
+
+ul li.checked {
+    color: var(--primary-grey);
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(images/checked.png);
 }
